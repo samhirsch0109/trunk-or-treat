@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #FF9A00;
+    font-family: "shlop", sans-serif;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #c900ff;
+    font-family: "mr-darcy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
