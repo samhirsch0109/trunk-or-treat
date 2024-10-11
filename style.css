@@ -1,11 +1,15 @@
 body {
     background-color: black;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     color: #FF9A00;
     font-family: "shlop", sans-serif;
     font-weight: bolder;
+    margin-top: 5px;
 }
 
 h2 {
@@ -13,4 +17,49 @@ h2 {
     font-family: "mr-darcy", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #09ff00;
+    border-radius: 30px;
+    border: solid black;
+    margin-top: 30px;
+    box-shadow: 10px 10px 20px rgba(255, 126, 20, 0.8);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.information {
+    color: white;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.corner-image {
+    position: absolute;
+    width: 100px;
+    /* Adjust size as needed */
+    height: auto;
+    /* Ensures they stay on top of other content */
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    margin: 50px;
+    /* Add spacing from the edges if needed */
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    margin: 50px;
+    /* Add spacing from the edges if needed */
+}
+
+.col {
+    color: white;
 }
