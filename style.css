@@ -3,7 +3,172 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
+    padding-top: 50px;
 }
+
+/*start of ghosts*/
+#container {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+#spooky {
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    animation: floaty 2s infinite;
+}
+
+#spooky2 {
+    position: absolute;
+    top: 30px;
+    right: -60px;
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    animation: floaty 2s infinite;
+}
+
+#spooky #body,
+#spooky2 #body {
+    position: relative;
+    margin: 20px auto 0;
+    width: 90px;
+    height: 110px;
+    background: #c9dac7;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+#spooky #body:before,
+#spooky2 #body:before,
+#spooky #body:after,
+#spooky2 #body:after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #c9dac7;
+    animation: floaty .2s infinite;
+}
+
+#spooky #body:before {
+    left: -9px;
+}
+
+#spooky #body:after {
+    right: -9px;
+}
+
+#spooky2 #body:before {
+    left: -9px;
+}
+
+#spooky2 #body:after {
+    right: -9px;
+}
+
+#spooky #body #eyes,
+#spooky2 #body #eyes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    width: 45px;
+    height: 10px;
+}
+
+#spooky #body #eyes:before,
+#spooky2 #body #eyes:before,
+#spooky #body #eyes:after,
+#spooky2 #body #eyes:after {
+    content: ' ';
+    display: block;
+    width: 13px;
+    height: 12px;
+    background: black;
+    border-radius: 50%;
+}
+
+#spooky #body #mouth,
+#spooky2 #body #mouth {
+    background: black;
+    margin: 12px auto 0;
+    width: 25px;
+    height: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#spooky #body #mouth:before,
+#spooky2 #body #mouth:before {
+    content: ' ';
+    display: block;
+    background: #ddb4b5;
+    margin-left: 10px;
+    width: 5px;
+    height: 5px;
+}
+
+#spooky #body #feet,
+#spooky2 #body #feet {
+    position: absolute;
+    display: flex;
+    bottom: -9px;
+    width: 90px;
+    height: 18px;
+}
+
+#spooky #body #feet>*,
+#spooky2 #body #feet>*,
+#spooky #body #feet::before,
+#spooky2 #body #feet::before,
+#spooky #body #feet::after,
+#spooky2 #body #feet::after {
+    content: ' ';
+    width: 18px;
+    height: 18px;
+    background: #c9dac7;
+    border-radius: 50%;
+}
+
+
+@keyframes floaty {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes zoomy {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
+
+/*end of ghosts*/
 
 h1 {
     color: #FF9A00;
@@ -17,7 +182,7 @@ h2 {
     font-family: "mr-darcy", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 button {
@@ -28,6 +193,7 @@ button {
     box-shadow: 10px 10px 20px rgba(255, 126, 20, 0.8);
     text-decoration: none;
     padding: 10px;
+    font-family: "mr-darcy";
 }
 
 .information {
@@ -38,34 +204,34 @@ h3 {
     margin-top: 30px;
 }
 
-.corner-image {
-    position: absolute;
-    width: 100px;
-    /* Adjust size as needed */
-    height: auto;
-    /* Ensures they stay on top of other content */
-}
-
-.top-left {
-    top: 0;
-    left: 0;
-    margin: 10px;
-    /* Add spacing from the edges if needed */
-}
-
-.top-right {
-    top: 0;
-    right: 0;
-    margin: 10px;
-    /* Add spacing from the edges if needed */
-}
-
 .col {
     color: white;
 }
 
 img.img-fluid {
     width: 300px;
-    border-radius: 20px;
-    border-color: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #09ff00;
+}
+
+.trunk-description {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+
+p {
+    font-family: "dead-history", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3.event-heading {
+    color: #c900ff;
+}
+
+.card-body {
+    font-family: "dead-history", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
