@@ -96,8 +96,8 @@ body {
 #spooky2 #body #eyes:after {
     content: ' ';
     display: block;
-    width: 10.4px;
-    height: 9.6px;
+    width: 8px;
+    height: 7px;
     background: black;
     border-radius: 50%;
 }
@@ -202,7 +202,8 @@ button {
     box-shadow: 10px 10px 20px rgba(255, 126, 20, 0.8);
     text-decoration: none;
     padding: 10px;
-    font-family: "mr-darcy";
+    font-family: "dead-history";
+    color: rgba(255, 126, 20, 0.8);
 }
 
 .information {
