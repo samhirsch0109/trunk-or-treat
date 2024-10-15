@@ -10,6 +10,7 @@ body {
 #container {
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 *:after,
@@ -19,21 +20,21 @@ body {
 
 #spooky {
     position: absolute;
-    top: 30px;
-    left: -60px;
+    top: 5px;
+    left: 10px;
     margin: 0;
-    width: 40%;
-    height: 40%;
+    width: 32%;
+    height: 32%;
     animation: floaty 2s infinite;
 }
 
 #spooky2 {
     position: absolute;
-    top: 30px;
-    right: -60px;
+    top: 5px;
+    right: 5px;
     margin: 0;
-    width: 40%;
-    height: 40%;
+    width: 32%;
+    height: 32%;
     animation: floaty 2s infinite;
 }
 
@@ -41,11 +42,11 @@ body {
 #spooky2 #body {
     position: relative;
     margin: 20px auto 0;
-    width: 90px;
-    height: 110px;
+    width: 72px;
+    height: 88px;
     background: #c9dac7;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
 }
 
 #spooky #body:before,
@@ -54,29 +55,29 @@ body {
 #spooky2 #body:after {
     content: '';
     position: absolute;
-    top: 60px;
+    top: 48px;
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 14.4px;
+    height: 14.4px;
     border-radius: 50%;
     background: #c9dac7;
     animation: floaty .2s infinite;
 }
 
 #spooky #body:before {
-    left: -9px;
+    left: -7.2px;
 }
 
 #spooky #body:after {
-    right: -9px;
+    right: -7.2px;
 }
 
 #spooky2 #body:before {
-    left: -9px;
+    left: -7.2px;
 }
 
 #spooky2 #body:after {
-    right: -9px;
+    right: -7.2px;
 }
 
 #spooky #body #eyes,
@@ -84,9 +85,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 40px 0 0;
-    width: 45px;
-    height: 10px;
+    padding: 32px 0 0;
+    width: 36px;
+    height: 8px;
 }
 
 #spooky #body #eyes:before,
@@ -95,8 +96,8 @@ body {
 #spooky2 #body #eyes:after {
     content: ' ';
     display: block;
-    width: 13px;
-    height: 12px;
+    width: 10.4px;
+    height: 9.6px;
     background: black;
     border-radius: 50%;
 }
@@ -104,11 +105,11 @@ body {
 #spooky #body #mouth,
 #spooky2 #body #mouth {
     background: black;
-    margin: 12px auto 0;
-    width: 25px;
-    height: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    margin: 9.6px auto 0;
+    width: 20px;
+    height: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 #spooky #body #mouth:before,
@@ -116,18 +117,18 @@ body {
     content: ' ';
     display: block;
     background: #ddb4b5;
-    margin-left: 10px;
-    width: 5px;
-    height: 5px;
+    margin-left: 8px;
+    width: 4px;
+    height: 4px;
 }
 
 #spooky #body #feet,
 #spooky2 #body #feet {
     position: absolute;
     display: flex;
-    bottom: -9px;
-    width: 90px;
-    height: 18px;
+    bottom: -7.2px;
+    width: 72px;
+    height: 14.4px;
 }
 
 #spooky #body #feet>*,
@@ -137,12 +138,11 @@ body {
 #spooky #body #feet::after,
 #spooky2 #body #feet::after {
     content: ' ';
-    width: 18px;
-    height: 18px;
+    width: 14.4px;
+    height: 14.4px;
     background: #c9dac7;
     border-radius: 50%;
 }
-
 
 @keyframes floaty {
 
@@ -152,7 +152,8 @@ body {
     }
 
     50% {
-        transform: translateY(-12px);
+        transform: translateY(-9.6px);
+        /* Scaled down by 20% */
     }
 }
 
@@ -164,7 +165,7 @@ body {
     }
 
     50% {
-        transform: scale(0.8);
+        transform: scale(0.84);
     }
 }
 
@@ -178,6 +179,14 @@ h1 {
 }
 
 h2 {
+    color: #c900ff;
+    font-family: "mr-darcy", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+h3 {
     color: #c900ff;
     font-family: "mr-darcy", sans-serif;
     font-weight: 400;
@@ -215,7 +224,7 @@ img.img-fluid {
 }
 
 .trunk-description {
-    color: #ffffff;
+    color: rgba(255, 126, 20, 0.8);
     margin-top: 30px;
 }
 
@@ -224,14 +233,27 @@ p {
     font-family: "dead-history", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: rgba(255, 126, 20, 0.8);
 }
 
-h3.event-heading {
+h3.schedule-heading {
     color: #c900ff;
+    font-family: "dead-history", sans-serif;
 }
 
 .card-body {
     font-family: "dead-history", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.schedule-details {
+    font-family: "dead-history", sans-serif;
+    color: rgba(255, 126, 20, 0.8);
+}
+
+img.event-photo {
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #09ff00;
 }
