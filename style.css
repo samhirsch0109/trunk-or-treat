@@ -183,7 +183,7 @@ h2 {
     font-family: "mr-darcy", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 25px;
+    margin-top: 60px;
 }
 
 h3 {
@@ -191,7 +191,7 @@ h3 {
     font-family: "mr-darcy", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 25px;
+    margin-top: 60px;
 }
 
 button {
@@ -254,7 +254,19 @@ h3.schedule-heading {
 }
 
 img.event-photo {
-    width: 200px;
+    width: 150px;
     border-radius: 30px;
     box-shadow: 0 0 10px #09ff00;
+}
+
+.schedule-heading {
+    cursor: pointer;
+}
+
+.toggle-button {
+    cursor: pointer;
+}
+
+.trunk-image {
+    cursor: pointer;
 }
